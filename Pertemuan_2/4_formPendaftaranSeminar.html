@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul, ol {
+            margin: 10px 0 20px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendaftaran Seminar Koding</h1>
+
+    <h2>Detail Acara</h2>
+    <ul> <li><strong>Topik:</strong> "Dasar-Dasar Web Development"</li> <li><strong>Jadwal:</strong> "Rabu, 03 September 2025"</li> <li><strong>Materi yang Akan Dipelajari:</strong><ol> <li>HTML & Struktur Dokumen</li> <li>CSS & Styling Dasar</li>
+        <li>JavaScript & Interaktivitas</li>
+    </ol></li></ul> 
+    <hr>
+    <h2>Jadwal Sesi Seminar</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Waktu</th>
+                <th>Aktivitas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:30</td>
+                <td>Sesi 1: Pengenalan HTML & CSS</td>
+            </tr>
+            <tr>
+                <td>10:30 - 10:45</td>
+                <td>Istirahat</td>
+            </tr>
+            <tr>
+                <td>10:45 - 12:00</td>
+                <td>Sesi 2: Pengenalan JavaScript</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td>Ishoma</td>
+            </tr>   
+            <tr>
+                <td>13:00 - 14:30</td>
+                <td>Sesi 3: Praktik Membuat Halaman Web Sederhana</td>
+        </tbody>
+    </table>
+        
+<hr>
+<h2>Formulir Pendaftaran</h2>
+    <form action="#" method="POST">
+        <fieldset style="width: fit-content;">
+            <legend>Informasi Pribadi</legend> 
+            <p>
+                <label for="username">Name Lengkap</label><br>
+                <input type="text" id="username" name="username" placeholder="Hikari Reiziq">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="user_email" placeholder="contoh@email.com" required>
+            </p>
+            <p>
+                <label for="no_hp">Nomor Handphone:</label><br>
+                <input type="tel" id="no_hp" name="no_hp" placeholder="+62 812-3456-7890" required>
+            <p>
+                <label>Tingkat Keahlian:</label><br>
+                <input type="radio" id="pemula" name="tingkatan" value="pemula" checked>
+                <label for="pemula">Pemula</label><br>
+
+                <input type="radio" id="menengah" name="tingkatan" value="menengah">
+                <label for="menengah">Menengah</label><br>
+            </p>
+            <p>
+                <label for="ukuran_kaos">Sesi Seminar</label><br>
+                <select id="ukuran_kaos" name="ukuran_kaos">
+                    <option value="S">Sesi 1</option>
+                    <option value="M">Sesi 2</option>
+                    <option value="L">Sesi 3</option>
+                </select>
+            </p>
+            <p>
+                <label for="pesan">Kolom Komentar</label><br>
+                <textarea id="pesan" name="alasan" rows="3" cols="50"></textarea>
+            </p>
+            <p>
+        
+                <input type="checkbox" id="setuju" name="syarat_persetujuan" value="setuju">
+                <label for="setuju">Saya setuju dengan semua syarat dan ketentuan.</label>
+            </p>
+            <br>
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset Formulir</button>
+        </fieldset>
+    </form>
+</body>
+</html>
